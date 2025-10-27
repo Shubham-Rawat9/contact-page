@@ -1,5 +1,8 @@
 import React from "react";
 import Button from "./ButtonComponent/button";
+ import { MdMessage } from "react-icons/md";
+ import { IoCall } from "react-icons/io5";
+ import { FaRegMessage } from "react-icons/fa6";
 
 
 const Contact = () => {
@@ -14,11 +17,16 @@ const Contact = () => {
           EMAIL, OR SOCIAL MEDIA.{" "}
         </p>
 
-        <div className="flex justify-evenly">
-
-            <div>
-                <Button/>
+        <div className="flex justify-evenly mt-20">
+          <div className="space-y-5">
+            <div className="flex items-center gap-5">
+                <Button  icons={<MdMessage />} text={"VIA Support Chat"}/>
+                <Button  icons={<IoCall />}  text={"VIA CALL"}/>
             </div>
+            <div className="flex items-center justify-center">
+                <Button  icons={<FaRegMessage />} text={"VIA EMAIL FORM"}/>
+            </div>
+      </div>
             <div>image</div>
 
         </div>
