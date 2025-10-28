@@ -1,3 +1,4 @@
+# Contact Page
 
 - Fully controlled inputs for Name, Email, and Placeholder.
 - **Submit button** with hover and active states.
